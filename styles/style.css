@@ -20,7 +20,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   display: grid;
   place-content: center;
   background: var(--main-bg-color);
@@ -28,6 +27,7 @@
   font-family: var(--main-font);
   color: var(--text-color);
   font-variation-settings: "wght" var(--weight-text);
+  background-attachment: fixed;
 }
 
 .header {
@@ -64,7 +64,7 @@
 .theme-menu__button {
   position: relative;
   margin-inline-start: 15px;
-  transition: 0.3s;
+  transition: opacity 0.3s ease;
   display: flex;
   background-color: inherit;
   border: none;
@@ -85,8 +85,8 @@
   left: -15px;
   width: 14px;
   height: 14px;
-  animation-direction: alternate;
   animation: moveArrow 0.5s ease-in-out infinite;
+  animation-direction: alternate;
 }
 
 .theme-menu__button:hover {
@@ -108,7 +108,7 @@
   bottom: -3px;
   background-color: var(--text-color);
   opacity: 0.6;
-  transition: 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -229,7 +229,7 @@
   position: relative;
   z-index: 1;
   cursor: pointer;
-  transition: color 0.5s ease-in-out;
+  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -276,6 +276,7 @@
   width: 39px;
   height: 36px;
   margin-block-start: 1px;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
