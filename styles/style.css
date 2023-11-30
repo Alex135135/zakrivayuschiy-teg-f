@@ -276,7 +276,7 @@
   width: 39px;
   height: 36px;
   margin-block-start: 1px;
-  transition: border 0.3s ease;
+  transition: outline 0.3s ease;
 }
 
 .card__icon-button:focus {
